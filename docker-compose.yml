@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+    web:
+        image: tonyw0527/react-build-test
+        ports:
+            - 80:80
+    app:
+        image: tonyw0527/appserver-test
+        expose:
+            - 3001
